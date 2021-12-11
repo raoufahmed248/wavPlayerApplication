@@ -1,0 +1,3 @@
+[submodule "jackMusicPlayer"]
+	path = jackMusicPlayer
+	url = https://github.com/raoufahmed248/jackMusicPlayer.git
