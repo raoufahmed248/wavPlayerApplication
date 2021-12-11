@@ -1,5 +1,10 @@
 Dependencies: TODO
 
+To clone this project:
+1.) git clone git clone https://github.com/raoufahmed248/wavPlayerApplication.git
+2.) cd wavPlayerApplication
+3.) git submodule update --init --recursive
+
 To build:
 1.) mkdir build
 2.) cmake ..
