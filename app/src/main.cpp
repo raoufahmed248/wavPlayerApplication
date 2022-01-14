@@ -95,7 +95,7 @@ main (int argc, char *argv[])
 	jack_status_t status;
 	paTestData data;
 	int i;
-    wavPlayer w1("CantinaBand60.wav",0);
+    wavPlayer w1("bluesRiff_mono_48000.wav",0);
 	
 	if (argc >= 2) {		/* client name specified? */
 		client_name = argv[1];
