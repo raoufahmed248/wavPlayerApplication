@@ -183,22 +183,22 @@ main (int argc, char *argv[])
 	 * it.
 	 */
  	
-	ports = jack_get_ports (client, NULL, NULL,
-				JackPortIsPhysical|JackPortIsInput);
-	if (ports == NULL) {
-		fprintf(stderr, "no physical playback ports\n");
-		exit (1);
-	}
+	// ports = jack_get_ports (client, NULL, NULL,
+	// 			JackPortIsPhysical|JackPortIsInput);
+	// if (ports == NULL) {
+	// 	fprintf(stderr, "no physical playback ports\n");
+	// 	exit (1);
+	// }
 
-	if (jack_connect (client, jack_port_name (output_port1), ports[0])) {
-		fprintf (stderr, "cannot connect output ports\n");
-	}
+	// if (jack_connect (client, jack_port_name (output_port1), ports[0])) {
+	// 	fprintf (stderr, "cannot connect output ports\n");
+	// }
 
-	if (jack_connect (client, jack_port_name (output_port2), ports[1])) {
-		fprintf (stderr, "cannot connect output ports\n");
-	}
+	// if (jack_connect (client, jack_port_name (output_port2), ports[1])) {
+	// 	fprintf (stderr, "cannot connect output ports\n");
+	// }
 
-	jack_free (ports);
+	// jack_free (ports);
     
     /* install a signal handler to properly quits jack client */
 #ifdef WIN32
